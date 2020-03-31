@@ -1,4 +1,4 @@
-package enums;
+package enumeration;
 
 /**
  * Enumeration Continent represents the each continent for the class Country
