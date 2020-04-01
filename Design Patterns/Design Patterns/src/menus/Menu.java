@@ -32,9 +32,9 @@ public class Menu {
 		selection.add("Retrieve all records stored in the database table");
 		selection.add("Retrieve records by country code");
 		selection.add("Retrieve records by country name");
-				selection.add("Add new records into the database");
+		selection.add("Add new records into the database");
 
-				return selection;
+		return selection;
 	}
 
 	/* Getter methods. */
