@@ -33,6 +33,8 @@ public class Menu {
 		selection.add("Retrieve records by country code");
 		selection.add("Retrieve records by country name");
 		selection.add("Add new records into the database");
+		selection.add("Closing object communication");
+		selection.add("Quit the program.");
 
 		return selection;
 	}
