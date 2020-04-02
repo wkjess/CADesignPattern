@@ -60,30 +60,41 @@ public class TestClientProgram {
 			country.getAllCountries();
 			break;
 
-			// for searching a country by insert the country name
+		// for searching a country by insert the country name
 		case "2":
 			country.searchCountryByName();
 			break;
 
-			// for searching a country by insert the country code
+		// for searching a country by insert the country code
 		case "3":
 			country.searchCountryByCode();
 			break;
 
-			// for adding a new country into the database
+		// for adding a new country into the database
 		case "4":
 			country.addNewCountry();
 			break;
 
-			// for closing the connection after complete the communication
+		// for closing the connection after complete the communication
 		case "5":
 			country.closingConnection();
 			break;
 
-			// no selection then do nothing
+		// quit the program
+		case "6":
+			quit();
+			break;
+			
+		// no selection then do nothing
 		default:
-				break;
+			break;
 		}
 	}
 
+	/** This method to quit the program. */
+	private void quit() {
+
+		System.out.println("I see you later, bye!");
+		System.exit(0);
+	}
 }
