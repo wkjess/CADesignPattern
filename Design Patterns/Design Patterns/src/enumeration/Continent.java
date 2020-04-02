@@ -47,7 +47,54 @@ public enum Continent {
 	 * @return the instance class for this continent
 	 */
 	public static Continent getContinentAsia() {
-		return Asia;
+		return ASIA;
 	}
-	
+
+	/*
+	* Get the instance of Continent of Europe
+	* @return the instance class for this continent
+	*/
+	public static Continent getContinentEurope() {
+		return EUROPE;
+	}
+
+	/*
+	* Get the instance of Continent of North America
+	* @return the instance class for this continent
+	*/
+	public static Continent getContinentNorthAmerica() {
+		return NORTHAMERICA;
+	}
+
+	/*
+	* Get the instance of Continent of Africa
+	* @return the instance class for this continent
+	*/
+	public static Continent getContinentAfrica() {
+		return AFRICA;
+	}
+
+	/*
+	* Get the instance of Continent of Oceania
+	* @return the instance class for this continent
+	*/
+	public static Continent getContinentOceania() {
+		return OCEANIA;
+	}
+
+	/*
+	* Get the instance of Continent of Antarctica
+	* @return the instance class for this continent
+	*/
+	public static Continent getContinentAntarctica() {
+		return ANTARCTICA;
+	}
+
+	/*
+	* Get the instance of Continent of South America
+	* @return the instance class for this continent
+	*/
+	public static Continent getContinentSouthAmerica() {
+		return SOUTHAMERICA;
+	}
 }
