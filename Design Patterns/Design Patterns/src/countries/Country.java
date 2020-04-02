@@ -1,11 +1,9 @@
 package countries;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import abstracts.AbstractCountry;
 import connections.MySQLConnector;
 import consoles.Console;
@@ -31,7 +29,7 @@ public class Country extends AbstractCountry implements Communicator {
 	/** Initial the connection to communicate with database. */
 
 	private Connection connection = null;
-
+	
 	/* Constructs the class object and create the connection object. */
 	public Country() {
 		connection = MySQLConnector.getConnection();
@@ -122,7 +120,7 @@ public class Country extends AbstractCountry implements Communicator {
 				String headOfState = rs.getString("HeadOfState");
 
 				// then display the country details to the screen.
-				System.out.format("%5s   \t %20s   \t %20s   \t   %5.3f   \t   %s%n", code, name, continent, surfaceArea, headOfState);
+				System.out.format("%s   \t %-10s   \t %-10s   \t   %5.3f   \t   %s%n", code, name, continent, surfaceArea, headOfState);
 			} else {
 				// Oops, no such country found prompt message
 				System.out.printf("Hey! Sorry the country %s that you search for cannot be found.%n", input);
@@ -146,11 +144,14 @@ public class Country extends AbstractCountry implements Communicator {
 	public void searchCountryByCode() {
 		// initial the prepared statement.
 		PreparedStatement pstmt = null;
+		// allows A - Z characters only and length max of 3
+				String codePattern = "^[A-Z]{3}$";
 
 		// prompt the query message searching country by code
 		System.out.printf("Hey! Which country are you searching for?\n");
+
 		// read input from keyboard
-		String input = Console.readInput("Enter country code: ");
+		String input = Console.readInput("Enter country code: ", codePattern);
 
 		// define the query statement for searching a country.
 		String query = "SELECT * FROM country WHERE Code = ?";
@@ -409,7 +410,7 @@ public class Country extends AbstractCountry implements Communicator {
 	 */
 	public void closingConnection() {
 		try {
-			System.out.println("Okay, all connected object will be closing now. Muask++");
+			System.out.println("Okay, all connected object will be closing now and a refresh of the connection is done!");
 			if(connection == null) {
 				connection.close();
 			}
