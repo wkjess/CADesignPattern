@@ -2,23 +2,23 @@
 
 # Objective
 
-• Bullet list Determine which design pattern should be used and how design patterns can be tailored for custom use.
+• Determine which design pattern should be used and how design patterns can be tailored for custom use.
  
-• Bullet list Understand how design patterns are used in industry code to aid the design process on larger projects.
+• Understand how design patterns are used in industry code to aid the design process on larger projects.
  
-• Bullet list Utilise their knowledge of design patterns to assess the limitations of an existing application. 
+• Utilise their knowledge of design patterns to assess the limitations of an existing application. 
 
 # Specification Functionality
 
 The design pattern acquires the application able to querying and retrieving data from database but client has no direct access to the database to extracting the data.
 
-• Bullet list Extracting all recorded country from database.
+• Extracting all recorded country from database.
 
 
-• Bullet list Searching a specific country by entering its full country name.
-• Bullet list Searching a specific country by entering its country code.
+• Searching a specific country by entering its full country name.
+• Searching a specific country by entering its country code.
 
-• Bullet list Adding a new country into the database.
+• Adding a new country into the database.
 
 ## Specific Requirements 
 
