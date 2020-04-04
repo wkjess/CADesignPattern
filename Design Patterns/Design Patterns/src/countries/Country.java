@@ -369,7 +369,6 @@ public class Country extends AbstractCountry implements Communicator {
 				// passing the input value into the argument.
 				pstmt.setString(1, country.getCountryCode());
 				pstmt.setString(2, country.getCountryName());
-				//HOW SET THE ENUM INTO DATABASE RECORD - INSTEAD STRING???
 				pstmt.setString(3, country.getCountryContinent());
 				pstmt.setFloat(4, country.getCountrySurfaceArea());
 				pstmt.setString(5, country.getCountryHeadOfState());
