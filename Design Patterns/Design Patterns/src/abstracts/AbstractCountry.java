@@ -18,7 +18,7 @@ public abstract class AbstractCountry {
 	private static String name; // the name of the country e.g. Ireland
 	private static String continent; // each of the country's continent belong to
 	private static float surfaceArea; // the surface area of the country
-	private static String headOfState; // refers to the country's capital
+	private static String headOfState; // refers to the head of state
 
 	/** assigns the getters and setters for each variables. */
 
